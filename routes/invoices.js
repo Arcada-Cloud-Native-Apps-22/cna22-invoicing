@@ -95,11 +95,11 @@ async function main() {
   
     // send mail with defined transport object
     let info = await transporter.sendMail({
-      from: '"Fred Foo 👻" <foo@example.com>', // sender address
-      to: "bar@example.com, baz@example.com", // list of receivers
-      subject: "Hello ✔", // Subject line
-      text: "Hello world?", // plain text body
-      html: "<b>Hello world?</b>", // html body
+      from: '"Beer Masters" <beermaster@example.com>', // sender address
+      to: "customer@example.com", // list of receivers
+      subject: "Invoice", 
+      text: "Hello! We have received your order and here is your invoice as an attachment . Drink responsibly :j", // plain text body
+      
       attachments: [{
       filename: 'invoice.pdf',
       path: 'invoice.pdf',
