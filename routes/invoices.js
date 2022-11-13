@@ -124,16 +124,16 @@ router.post('/', async (req, res) => {
     var data = {
    
         "images": {
-            // The logo on top of your invoice
-            "logo": ""
+            // Logo
+            "logo": "unknown.png"
         },
         // Your own data
         "sender": {
-            "company": "Sample Corp",
-            "address": "Sample Street 123",
-            "zip": "1234 AB",
-            "city": "Sampletown",
-            "country": "Samplecountry"
+            "company": "Super Beer Bros",
+            "address": "Beer Street 12",
+            "zip": "040404",
+            "city": "Global town",
+            "country": "Earth"
             
         },
         // Your recipient
@@ -151,7 +151,7 @@ router.post('/', async (req, res) => {
             // Invoice data
             "date": "12-12-2021",
             // Invoice due date
-            "due-date": "31-12-2021"
+            "due-date": "30-12-2021"
         },
         
         "products": [
@@ -175,7 +175,7 @@ router.post('/', async (req, res) => {
             }
         ],
         // The message you would like to display on the bottom of your invoice
-        "bottom-notice": "Due date 15 days",
+        "bottom-notice": "Due date 14 days",
         // Settings to customize your invoice
         "settings": {
             "currency": "EUR"
